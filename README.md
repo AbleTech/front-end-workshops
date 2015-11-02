@@ -1,4 +1,4 @@
-# front-end-workshops
+# Front-end Workshops
 
 Practical exercises and materials for the Front-end Workshops, held at Abletech.
 
