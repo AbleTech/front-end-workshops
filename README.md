@@ -11,7 +11,7 @@ git branch -b YOURNAME
 
 ## Exercises
 
-Browse to the `courses` folder and start editing and saving the numbered `.md` files in your favoured editor.
+Browse to the `exercises` folder and start editing and saving the numbered `.md` files in your favoured editor.
 
 ## Committing your work
 
