@@ -9,11 +9,15 @@ Make the following snippets XHTML1 (Strict) compliant.
 XHTML has to comply to XML rules, such as how documents and elements are structured. Fix the following HTML by making it XHTML1 Strict-compliant.
 
 ```
-<HTML>
-	<TITLE>Hello world!
-	<BODY>
-		<P>Hello world!
-	</BODY>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+  	<title>Hello world!</title>
+  </head>
+	<body>
+		<p>Hello world!</p>
+	</body>
+</html>
 ```
 
 ### 2. Element well-formedness
@@ -21,10 +25,11 @@ XHTML has to comply to XML rules, such as how documents and elements are structu
 XHTML element tags need to follow strict patterns. Fix the following examples.
 
 ```
-<IMG src="/lazy-dog.jpg">
-<P>
-	The <DEL>fantastic <INS>quick</INS></DEL> Mr. <INS>brown</INS></DEL> fox<BR>
+<img alt="Lazy dog" src="/lazy-dog.jpg" />
+<p>
+	The <del>fantastic</del><ins>quick</ins> <del>Mr.</del><ins>brown</ins> fox<br />
 	jumped over the lazy dog
+</p>
 ```
 
 ### 3. Attributes
@@ -32,7 +37,7 @@ XHTML element tags need to follow strict patterns. Fix the following examples.
 Attributes too need special care to be XML-compliant. Fix the following example.
 
 ```
-<TEXTAREA name=message required>
+<textarea name="message" required="required"></textarea>
 ```
 
 ### 4. Scripts
@@ -40,10 +45,12 @@ Attributes too need special care to be XML-compliant. Fix the following example.
 Some portions of an XML-compliant document might contain unwanted characters such as less-than (<) and ampersand (&) characters. How do we prevent those parts of the document from being parsed as XML?
 
 ```
-<SCRIPT>
+<script type="text/javascript">
+//<![CDATA[
 	for (var i=0; i<list.length; i++) {
 		// do stuff & then beer.
 	}
-</SCRIPT>
+//]]>
+</script>
 ```
 
