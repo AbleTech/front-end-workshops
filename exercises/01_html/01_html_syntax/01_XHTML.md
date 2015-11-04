@@ -18,7 +18,7 @@ XHTML has to comply to XML rules, such as how documents and elements are structu
 
 ### 2. Element well-formedness
 
-XHTML element tags need to follow strict patterns. Fix the following examples.
+XHTML element tags need to follow strict casing, nesting and closing patterns. Fix the following snippets...
 
 ```
 <IMG src="/lazy-dog.jpg">
@@ -29,13 +29,13 @@ XHTML element tags need to follow strict patterns. Fix the following examples.
 
 ### 3. Attributes
 
-Attributes too need special care to be XML-compliant. Fix the following example.
+Attributes too need special care to be XML-compliant. Fix the following example. (Bonus points for writing the `textarea` element correctly)
 
 ```
 <TEXTAREA name=message required>
 ```
 
-### 4. Scripts
+### 4. Scripts and style blocks
 
 Some portions of an XML-compliant document might contain unwanted characters such as less-than (<) and ampersand (&) characters. How do we prevent those parts of the document from being parsed as XML?
 
@@ -47,3 +47,13 @@ Some portions of an XML-compliant document might contain unwanted characters suc
 </SCRIPT>
 ```
 
+### 5. Character entities
+
+Replace the following characters with their associated entities
+
+```
+©
+™
+&
+💩
+```
