@@ -6,7 +6,8 @@ Practical exercises and materials for the Front-end Workshops, held at Abletech.
 
 ```
 git clone git@github.com:AbleTech/front-end-workshops.git
-git branch -b YOURNAME
+cd front-end-workshops
+git checkout -b YOURNAME
 ```
 
 ## Exercises
