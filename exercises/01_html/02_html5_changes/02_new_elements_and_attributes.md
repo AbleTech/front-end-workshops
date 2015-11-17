@@ -28,3 +28,8 @@ List as many input types as you can:
 <input type="text">
 ```
 
+Setting boundaries and input formatting on field values is now handled natively in some browsers. List as many of the attributes that control field input.
+
+```
+e.g. <input maxlength="4">
+```
