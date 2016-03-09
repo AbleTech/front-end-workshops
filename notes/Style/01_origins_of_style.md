@@ -88,29 +88,47 @@ The highly-abbreviated rules:
 - Why was CSS created?
 - Why is separating style from content a good thing?
 - Why is it a bad thing?
-- But, React?!
+- But React?!
 
 # So, how is style applied to a document?
 
-- elements and attributes
-- `<link rel="stylesheet" href="…">`
-- `<style>` blocks
-- inline style attributes
-- JavaScript .style methods
+These ways:
+
+- Browser default or internal styling
+	- elements and attributes
+- Author styling
+	- `<link rel="stylesheet" href="…">`
+	- `<style>` blocks
+	- inline style attributes
+	- JavaScript .style methods
+- Q: What else?
+	- User custom CSS
+	- User preferences
 
 What order are these processed in?
 
-Author presentational HTML elements and attributes (excl. inline style)
-User Agent CSS
-Author CSS
-User custom CSS
-Inline styles
+1. Browser CSS for elements and attributes
+2. `<link rel="stylesheet" href="…">` and `<style>` blocks
+4. User custom CSS
+4. inline style attributes
+5. JavaScript .style methods
+6. ?
 
+# It wasn't all roses
 
-# To sum up
+CSS had a troubled uptake.
 
-What are the various influencers for styling an HTML element?
+The initial spec for CSS1 was finalised in 1996. IE3 was released shortly after and had partial CSS1 support.
 
-What is really going on when it comes to styling an HTML document?
+It took 3 years afterwards to be fully-implemented by any browser.
 
+Version 5 of the popular browsers had some serious CSS bugs, so that ushered in the dawn of CSS hacks.
+
+CSS2.1 was considered the most complete version of CSS and was initially released as a spec in early 2004. Sadly it bounced backwards and forwards between draft and release status.
+
+IE7 was released a year afterwards and was the last browser to fully support CSS 2.1
+
+# It's still not roses?
+
+To this day, CSS continues to confuse and infuriate developers. Why is that?
 
